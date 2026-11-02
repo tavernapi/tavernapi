@@ -1,0 +1,6 @@
+id,name,provider,served_via,context_tokens,trial,input,output,cache_read,cache_write
+claude-opus-5-5,Claude Opus 5.5,Anthropic,"AWS and Google Cloud",1000000,false,2.8,14,0.14,3.5
+claude-sonnet-5-5,Claude Sonnet 5.5,Anthropic,"AWS and Google Cloud",1000000,false,1.6,8,0.08,2
+gemini-4-argon,Gemini 4 Argon,Google,"Google AI Studio",1000000,true,1.2,6,0.06,
+gemini-3.8-flash,Gemini 3.8 Flash,Google,"Google AI Studio",1000000,true,0.49,2.45,0.049,
+deepseek-v4-pro,DeepSeek V4 Pro,DeepSeek,"DeepSeek API (official)",1000000,false,1.49,4.49,0.05,

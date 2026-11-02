@@ -1,0 +1,54 @@
+name: Connection problem
+description: SillyTavern, JanitorAI or another app cannot connect, or shows an error
+labels: [connection]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Never paste your API key here.** The last 4 characters shown in the console are enough.
+        Account and payment questions go to support, not to public issues: https://tavernapi.com/contact/
+        Most errors are explained at https://tavernapi.com/troubleshooting/ — and `examples/doctor.py` in this repo checks your URL and key for you.
+  - type: dropdown
+    id: client
+    attributes:
+      label: App
+      options:
+        - SillyTavern — Custom (OpenAI-compatible)
+        - SillyTavern — Claude source (Reverse Proxy)
+        - SillyTavern — Google AI Studio source (Reverse Proxy)
+        - JanitorAI
+        - RisuAI
+        - Agnaistic
+        - My own code
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL you entered
+      placeholder: https://tavernapi.com/v1
+    validations:
+      required: true
+  - type: input
+    id: model
+    attributes:
+      label: Model ID
+      placeholder: gemini-4-argon
+  - type: input
+    id: error
+    attributes:
+      label: HTTP status and error code
+      placeholder: 402 insufficient_balance
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened
+      description: When it happened (with time zone), what you tried, and the output of examples/doctor.py if you ran it.
+  - type: checkboxes
+    id: no-key
+    attributes:
+      label: Before you submit
+      options:
+        - label: I removed my API key and email address from everything above.
+          required: true

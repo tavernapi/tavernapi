@@ -1,0 +1,83 @@
+{
+  "updated": "2026-11-01",
+  "currency": "USD",
+  "unit": "per 1,000,000 tokens",
+  "notes": [
+    "Output prices include thinking tokens.",
+    "cache_write null: no separate cache-write fee; tokens written to the cache are billed at the input price.",
+    "Prompt caching is applied automatically on every connection."
+  ],
+  "source": "https://tavernapi.com/pricing/",
+  "models": [
+    {
+      "id": "claude-opus-5-5",
+      "name": "Claude Opus 5.5",
+      "provider": "Anthropic",
+      "served_via": "AWS and Google Cloud",
+      "context_tokens": 1000000,
+      "trial": false,
+      "prices": {
+        "input": 2.8,
+        "output": 14,
+        "cache_read": 0.14,
+        "cache_write": 3.5
+      }
+    },
+    {
+      "id": "claude-sonnet-5-5",
+      "name": "Claude Sonnet 5.5",
+      "provider": "Anthropic",
+      "served_via": "AWS and Google Cloud",
+      "context_tokens": 1000000,
+      "trial": false,
+      "prices": {
+        "input": 1.6,
+        "output": 8,
+        "cache_read": 0.08,
+        "cache_write": 2
+      }
+    },
+    {
+      "id": "gemini-4-argon",
+      "name": "Gemini 4 Argon",
+      "provider": "Google",
+      "served_via": "Google AI Studio",
+      "context_tokens": 1000000,
+      "trial": true,
+      "prices": {
+        "input": 1.2,
+        "output": 6,
+        "cache_read": 0.06,
+        "cache_write": null
+      }
+    },
+    {
+      "id": "gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "provider": "Google",
+      "served_via": "Google AI Studio",
+      "context_tokens": 1000000,
+      "trial": true,
+      "prices": {
+        "input": 0.49,
+        "output": 2.45,
+        "cache_read": 0.049,
+        "cache_write": null
+      }
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "name": "DeepSeek V4 Pro",
+      "provider": "DeepSeek",
+      "served_via": "DeepSeek API (official)",
+      "context_tokens": 1000000,
+      "trial": false,
+      "prices": {
+        "input": 1.49,
+        "output": 4.49,
+        "cache_read": 0.05,
+        "cache_write": null
+      }
+    }
+  ]
+}

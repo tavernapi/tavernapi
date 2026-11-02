@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Troubleshooting guide
+    url: https://tavernapi.com/troubleshooting/
+    about: What every TavernAPI error code means and how to fix it.
+  - name: Account, billing or payment help
+    url: https://tavernapi.com/contact/
+    about: Telegram, Discord or email. Please don't post account details in public issues.
