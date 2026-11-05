@@ -158,7 +158,7 @@ In roleplay communities, "proxy" can mean anything from a leaked-key paste link 
 If you need help with a connection error or a top-up, reach out through the [contact page](https://tavernapi.com/contact/):
 
 - **Telegram:** `@TavernAPI`
-- **Discord:** `alexovout`
+- **Discord:** [discord.gg/Zm2TAus6ed](https://discord.gg/Zm2TAus6ed) (community server: setup help, bug reports, feedback)
 - **Email:** `support@tavernapi.com`
 
 Do not post your `sk-tav-...` API key, account email address, or payment transaction details in public GitHub issues. Even in private support messages, never send your full API key; the last 4 characters shown in the console are enough.
